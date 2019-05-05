@@ -8,7 +8,6 @@ const Util = require('discord.js');
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
 console.log('         [Wait please .. ]       ')
 console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-client.on('ready', () => {
     console.log('')
     console.log('')
     console.log('')
