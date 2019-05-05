@@ -5,33 +5,28 @@ const Util = require('discord.js');
  
  
  
-console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-console.log('         [Wait please .. ]       ')
-console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-    console.log('')
-    console.log('')
-    console.log('')
-    console.log('')
-    console.log('')
-    console.log('')
-    console.log('')
-    console.log('')
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  console.log(`Logged in as [ ${client.user.tag}! ]`);
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  console.log('[           BOT IS ONLINE         ]')
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  console.log('[        info         ]')
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-  console.log(`servers! [ " ${client.guilds.size} " ]`);
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
+client.on('ready', () => {
+
+
+console.log('bot is ready');
+client.user.setGame(` |*help|*invite`,"https://www.twitch.tv/mixo")
+
+
+
+
+
+
+  console.log('-1--2--3---4--');
+  console.log('-Bot Is Online-')
+  console.log('-1--2---3---4--')
+  console.log(`ON ${client.guilds.size} Servers `);
+    console.log(`---------------`);
+  console.log(`Logged in as ${client.user.tag}!`);
+   console.log(`Logged in as * [ " ${client.user.username} " ]`);
   console.log(`Users! [ " ${client.users.size} " ]`);
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
   console.log(`channels! [ " ${client.channels.size} " ]`);
-  console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
-    client.user.setActivity("~help",{type: 'WATCHING'});
+  console.log(`--بسم الله و الله اكبر--`);
 });
- 
  
   client.on('message', message => {
   if (message.content.startsWith("*avatar")) {
